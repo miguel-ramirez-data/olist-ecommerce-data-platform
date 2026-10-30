@@ -1,0 +1,33 @@
+# Data — never commit dataset files
+data/*
+!data/.gitkeep
+
+# Secrets
+.env
+*.pem
+*.key
+kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# dbt (Phase 2)
+target/
+dbt_packages/
+logs/
+
+# Terraform (Phase 5)
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
